@@ -1,4 +1,5 @@
 import "../styles/styles.css";
+import "lazysizes";
 import MobileMenu from "./modules/MobileMenu";
 import RevealOnScroll from "./modules/RevealOnScroll";
 import StickyHeader from "./modules/StickyHeader";
@@ -7,7 +8,7 @@ let modal; // By default, typeof(modal) will return "undefined".
 
 new StickyHeader();
 new MobileMenu();
-new RevealOnScroll(document.querySelectorAll(".feature-item"), 75);
+new RevealOnScroll(document.querySelectorAll(".feature-item"), 70);
 new RevealOnScroll(document.querySelectorAll(".testimonial"), 60);
 
 document.querySelectorAll(".open-modal").forEach(element => {
