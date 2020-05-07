@@ -6,8 +6,8 @@ exports.handler = function(events, context, callback) {
 
     let body;
 
-    if (event.body) { // If Text sent by user Exists
-        body = JSON.parse(event.body);
+    if (events.body) { // If Text sent by user Exists
+        body = JSON.parse(events.body);
     } else {
         body = {};
     }
