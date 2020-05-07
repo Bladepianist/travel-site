@@ -3,13 +3,15 @@ import "lazysizes";
 import MobileMenu from "./modules/MobileMenu";
 import RevealOnScroll from "./modules/RevealOnScroll";
 import StickyHeader from "./modules/StickyHeader";
+import ClientArea from "./modules/ClientArea";
 
-let modal; // By default, typeof(modal) will return "undefined".
-
+new ClientArea();
 new StickyHeader();
 new MobileMenu();
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 70);
 new RevealOnScroll(document.querySelectorAll(".testimonial"), 60);
+
+let modal; // By default, typeof(modal) will return "undefined".
 
 document.querySelectorAll(".open-modal").forEach(element => {
     element.addEventListener("click", event => {
