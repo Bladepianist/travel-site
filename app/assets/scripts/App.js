@@ -5,6 +5,17 @@ import RevealOnScroll from "./modules/RevealOnScroll";
 import StickyHeader from "./modules/StickyHeader";
 import ClientArea from "./modules/ClientArea";
 
+// React Related Code Goes Here
+import React from "react"; // If component and the main js file (App.js here) both include this line, webpack will point it to the same reference thus, no bloating.
+import ReactDOM from "react-dom";
+
+// Import React Components that we created
+import MyAmazingComponent from "./modules/MyAmazingComponent";
+
+ReactDOM.render(<MyAmazingComponent />, document.querySelector("#my-react-example"));
+// React Related Code Ends Here
+// Next React topics to research would be "props" and "hooks / useState"
+
 new ClientArea();
 new StickyHeader();
 new MobileMenu();
